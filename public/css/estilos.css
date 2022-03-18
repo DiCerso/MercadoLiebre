@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './variables.css';
+
+*{
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+/*
+-------------------------------------------------------------------------------
+HEADER
+-------------------------------------------------------------------------------
+*/
+
+body{
+    background-color: var(--grisclaro);
+}
+
+header{
+    background-color: var(--amarillo);
+    margin: -2%;
+    height: 405px;
+}
+
+.logo{
+    width: 35vw;
+    margin-top: 6vh;
+    margin-left: 10vw;
+}
+
+.busqueda{
+    padding-left: 10vw;
+}
+
+.barra{
+    display: block;
+    width: 45vw;
+}
+
+#compra{
+    text-align: center;
+}
+
+.navbar{
+    list-style-type: none;
+    padding-inline-start: 0vw;
+}
+
+#navbar2{
+    padding-top: 10px;
+}
+#navbar2 li{
+    padding-left: 16px;
+    margin: -15px;
+}
+
+.navbar li a i{
+    margin: 2vw;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.burger-menu{
+    height: 40px;
+    width: 40px;
+    margin-left: 45%;
+    text-align: center;
+    color: white;
+    border-radius: 15%;
+    background-color: var(--celeste);
+}
+
+#lineas{
+    margin-top: 25%;
+}
+
+img{
+    width: 100%;
+    padding-top: 8px;
+}
+/*
+-------------------------------------------------------------------------------
+HEADER
+-------------------------------------------------------------------------------
+*/
+.banner{
+    padding: -8vw;
+}
+
+/*
+-------------------------------------------------------------------------------
+MAIN
+-------------------------------------------------------------------------------
+*/
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+
+.titular{
+    font-size: 24px
+}
+
+main section article{
+    background-color: white;
+}
+
+
+
+
+/*
+-------------------------------------------------------------------------------
+MAIN
+-------------------------------------------------------------------------------
+*/
+/*
+-------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------
+*/
+
+footer{
+    background-color: white;
+    margin: -2px;
+}
+
+#iconsfooter{
+    margin-left: 45%;
+    color: var(--celeste);
+    font-size: 40px;
+}
+
+footer section h4{
+    text-align: center;
+}
+
+.descrip{
+    text-align: center;
+    font-size: 16px;
+}
+
+.copyright{
+    font-size: 12px;
+    color: var(--grisoscuro);
+}
+
+
+
+/*
+-------------------------------------------------------------------------------
+FOOTER
+-------------------------------------------------------------------------------
+*/
+
