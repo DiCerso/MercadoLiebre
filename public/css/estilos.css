@@ -22,17 +22,43 @@ header{
     background-color: var(--amarillo);
     margin: 0;
     height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.div__logo{
+    width: 50%;
 }
 
 .logo{
-    width: 35vw;
-    margin-top: 6vh;
-    margin-left: 10vw;
+    width: 75%;
+    margin-left: 10%;
 }
 
 .busqueda{
-    padding-left: 6vw;
+    width: 50%;
+    position: relative;
 }
+
+.busqueda .barra{
+    padding-left: 2px;
+    border-radius: 6px;
+    height: 35px;
+    border: 1px solid var(--grisclaro);
+} 
+
+.busqueda .boton{
+    width: 12%;
+    top: 10px;
+    right: 18px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    color: var(--grisoscuro);
+}
+
 
 .barra{
     display: block;
@@ -41,6 +67,7 @@ header{
 
 #compra{
     text-align: center;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -75,10 +102,11 @@ header nav ul li a{
     border-radius: 15%;
     background-color: var(--celeste);
     margin-top: 5%;
+    font-size: 25px;
 }
 
 #lineas{
-    margin-top: 30%;
+    margin-top: 23%;
 }
 
 img{
@@ -132,26 +160,32 @@ main section{
 
 main section article{
     background-color: white;
+    
+    
 }
 
 
 main section article .info{
     border: solid 1px #ebebeb;
     padding: 15px;
+    position: relative;
 }
 
-main section article .info div{
-    position: relative;
-    margin: 2%;
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
     border-radius: 50%;
-    border: solid 1px green;
-    width: 40px;
-    height: 40px;
-    color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: -15px;;
 }
+
 
 main section article div .nombre{
     margin-top: 8%;
@@ -159,8 +193,16 @@ main section article div .nombre{
     display: none;
 }
 
+main section article div .datos{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
 
-
+main section article div .datos .descuento{
+    margin-top: 1px;
+    margin-left: 5px;
+}
 
 
 
@@ -214,12 +256,58 @@ FOOTER
 
 @media(min-width:361px){
 
+
+    .div__logo{
+        width: 33.3%;
+    }
+
+    .div__logo .logo{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    header .busqueda{
+        width: 33.3%;
+    }
+
+    header #compra{
+        width: 33.3%;
+    }
+
+    .busqueda .barra{
+        height: 20px;
+        width: 80%;
+    }
+
+    .busqueda .boton{
+        background-color: var(--grisclaro);
+        border: 1px solid var(--grisoscuro);
+        top: 2px;
+        right: 9px;
+    }
+
+    
+
     header{
         height: 405px;
     }
 
+    body header .navegacion{
+        width: 100%;
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+    }
+
     .navbar{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    #navbar2{
+        padding-top: 0;
     }
 
     .burger-menu{
@@ -233,8 +321,29 @@ FOOTER
     main section article div .nombre{
         display: block;
     }
+
+    main section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    main section article{
+        width: 40%;
+    }
+
+
+
+
+
+
+
 }
 
 @media(min-width:769px){
-    /*de momento no utilizo esto por que pide los cambios tanto en desktop como en tablet*/
+
+    main section article{
+        width: 20%;
+    }
+
 }
