@@ -120,6 +120,7 @@ HEADER
 */
 .banner{
     padding: 0;
+    display: none;
 }
 
 /*
@@ -222,12 +223,12 @@ footer{
 }
 
 #iconsfooter{
-    margin: 20% auto 10px 45%;
+    margin: 10% auto 10px 45%;
     color: var(--celeste);
     font-size: 2em;
 }
 
-footer section h4{
+footer div section h4{
     text-align: center;
 }
 
@@ -240,7 +241,6 @@ footer section h4{
     margin-top: 5%;
     font-size: 12px;
     color: var(--grisoscuro);
-    padding-bottom: 5%;
     background-color: white;
     margin-left: 5%;
 }
@@ -256,7 +256,13 @@ FOOTER
 
 @media(min-width:361px){
 
+    a{
+        font-size: 11px;
+    }
 
+    .banner{
+        display:block;
+    }
     .div__logo{
         width: 33.3%;
     }
@@ -289,7 +295,7 @@ FOOTER
     
 
     header{
-        height: 405px;
+        height: 215px;
     }
 
     body header .navegacion{
@@ -329,7 +335,7 @@ FOOTER
     }
 
     main section article{
-        width: 40%;
+        width: 45%;
     }
 
 
@@ -341,6 +347,23 @@ FOOTER
 }
 
 @media(min-width:769px){
+
+    footer div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+    #iconsfooter{
+        margin: 0 auto;
+    }
+    footer div section{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
     main section article{
         width: 20%;
