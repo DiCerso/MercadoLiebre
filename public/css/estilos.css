@@ -254,10 +254,10 @@ FOOTER
 */
 
 
-@media(min-width:361px){
+@media(min-width:461px){
 
     a{
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .banner{
