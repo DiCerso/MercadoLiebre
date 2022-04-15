@@ -1,0 +1,118 @@
+
+.index .banner{
+    padding: 0;
+    display: none;
+}
+
+.index main{
+    position: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.index main section article{
+    margin: 10px 0;
+}
+
+.index main section{
+    display: flex;
+    flex-direction: column;
+}
+
+.index .precio{
+    font-size: 18px;
+}
+
+.index .descuento{
+    font-size: 16px;
+    color: green;
+}
+
+.index .titular{
+    font-size: 24px;
+    color: var(--grisoscuro);
+    margin: 10px 0;
+}
+
+.index main section article{
+    background-color: white;
+    
+    
+}
+
+
+.index main section article .info{
+    border: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.index main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;;
+}
+
+
+.index main section article div .nombre{
+    margin-top: 8%;
+    color: var(--grisoscuro);
+    display: none;
+}
+
+.index main section article div .datos{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.index main section article div .datos .descuento{
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+
+@media(min-width:461px){
+
+
+    .index .banner{
+        display:block;
+    }
+
+
+    .index main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .index main section article div .nombre{
+        display: block;
+    }
+
+    .index main section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .index main section article{
+        width: 45%;
+    }
+
+}
+
+@media(min-width:769px){
+
+    .index main section article{
+        width: 20%;
+    }
+
+}

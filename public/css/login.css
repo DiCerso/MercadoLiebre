@@ -1,0 +1,79 @@
+.login main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.login .form__login{
+    background-color: var(--grisclaro);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login .form__login div{
+    margin-top: 30px;
+}
+
+.login .form__login .nameuser{
+    display: flex;
+    justify-content: center;
+}
+
+.login .form__login .nameuser input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.login .form__login .contra{
+    display: flex;
+    justify-content: center;
+}
+
+.login .form__login .contra input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.login .form__login .boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.login .form__login .boton button{
+    border: 1px solid var(--grisclaro);
+    border-radius: 10px;
+    background-color: var(--celeste);
+    color: white;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+}
+
+@media(min-width: 468px){
+
+    .login .form__login{
+        align-items: center;
+    }
+
+    .login .form__login .nameuser input,
+    .login .form__login .contra input{
+        width: 500px;
+    }
+
+    .login .form__login .boton button{
+        width: 500px;
+    }
+
+}

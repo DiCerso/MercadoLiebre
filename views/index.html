@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5a8fb06a25.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <div class="div__logo">
-            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="">
+<body class="index">
+    <header class="header">
+        <div class="header__top">
+            <a href="/"class="div__logo">
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="">
+            </a>
+            <nav class="busqueda">
+                <input type="text" class="barra" placeholder="Buscar productos, marcas">
+                <button class="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </nav>
+            <p id="compra"><i class="fa-solid fa-hand-holding-dollar"></i>compra en cuotas y sin targeta de crédito</p>
         </div>
-        <nav class="busqueda">
-            <input type="text" class="barra" placeholder="Buscar productos, marcas">
-            <button class="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </nav>
-        <p id="compra"><i class="fa-solid fa-hand-holding-dollar"></i>compra en cuotas y sin targeta de crédito</p>
         <nav class="navegacion">
             <ul class="navbar">
                 <li><a href="#">Ofertas</a></li>
@@ -31,8 +33,8 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul id="navbar2" class="navbar">
-                <li><a href="#">Crea tu cuenta<i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="#">Ingresa<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                <li><a href="/register">Crea tu cuenta<i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
                 <li><a href="#">Mis Compras<i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
@@ -137,7 +139,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div>
             <section>
                 <i id="iconsfooter" class="fa-solid fa-credit-card"></i>

@@ -1,0 +1,233 @@
+
+
+.register main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.register .form__register{
+    background-color: var(--grisclaro);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register .form__register div{
+    margin-top: 30px;
+}
+
+.register .form__register .nombreyape{
+    display: flex;
+    justify-content: center;
+}
+
+.register .form__register .nombreyape input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.register .form__register .nameuser{
+    display: flex;
+    justify-content: center;
+}
+
+.register .form__register .nameuser input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.register .form__register .email{
+    display: flex;
+    justify-content: center;
+}
+
+.register .form__register .email input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.register .form__register .date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register .form__register .date h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.register .form__register .date input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.register .form__register .Domicilio{
+    display: flex;
+    justify-content: center;
+}
+
+.register .form__register .Domicilio input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.register .form__register .Perfil-de-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.register .form__register .Perfil-de-usuario h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.register .form__register .Perfil-de-usuario .opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.register .form__register .Perfil-de-usuario .vendedor input,
+.register .form__register .Perfil-de-usuario .consumidor input{
+    margin-right: 20px;
+}
+
+.register .form__register .interes{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.register .form__register .interes h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.register .form__register .interes .interes__opciones label{
+    margin-left: 20px;
+}
+
+
+.register .form__register .foto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.register .form__register .foto h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.register .form__register .foto input{
+    font-size: 15px;
+}
+
+
+.register .form__register .contra{
+    display: flex;
+    justify-content: center;
+}
+
+.register .form__register .contra input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+
+.register .form__register .botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.register .form__register .botones button{
+    border: 1px solid var(--grisclaro);
+    border-radius: 10px;
+    background-color: var(--celeste);
+    color: white;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+}
+
+@media(min-width:769px){
+
+    .register .form__register{
+        align-items: center;
+    }
+
+
+    .register .form__register .Perfil-de-usuario .opciones{
+        justify-content: flex-start;
+    }
+    .register .form__register .Perfil-de-usuario .opciones .consumidor{
+        margin-left: 20px;
+    }
+
+    .register .form__register .nombreyape input,
+    .register .form__register .nameuser input,
+    .register .form__register .email input,
+    .register .form__register .date input,
+    .register .form__register .Domicilio input,
+    .register .form__register .contra input{
+        width: 700px;
+        
+    }
+
+    .register .form__register .Perfil-de-usuario,
+    .register .form__register .interes {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .register .form__register .interes .interes__opciones{
+        align-items: flex-start;
+        display: flex;
+        width: 400px;
+    }
+
+    .register .form__register .foto{
+        width: 700px;
+        margin-left: 0;
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+
