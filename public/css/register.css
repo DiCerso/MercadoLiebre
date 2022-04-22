@@ -185,7 +185,10 @@
 @media(min-width:769px){
 
     .register .form__register{
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
 
@@ -196,13 +199,27 @@
         margin-left: 20px;
     }
 
+    .register .form__register .nombreyape,
+    .register .form__register .nameuser,
+    .register .form__register .email,
+    .register .form__register .contra,
+    .register .form__register .Domicilio{
+        width: 45%;
+    }
+    .register .form__register .date{
+        width: 100%;
+    }
+    .register .form__register .date input{
+        width: 45%;
+    }
+
+
     .register .form__register .nombreyape input,
     .register .form__register .nameuser input,
     .register .form__register .email input,
-    .register .form__register .date input,
     .register .form__register .Domicilio input,
     .register .form__register .contra input{
-        width: 700px;
+        width: 100% ;
         
     }
 

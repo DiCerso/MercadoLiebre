@@ -114,8 +114,8 @@ header.header{
 
 @media(min-width: 461px){
 
-    .header{
-        height: 215px;
+    header.header{
+        height: 175px;
     }
 
     .header .div__logo{
@@ -162,6 +162,7 @@ header.header{
         display: flex;
         flex: row;
         justify-content: space-between;
+        padding-bottom: 20px;
     }
 
     .header .navbar{
@@ -178,10 +179,14 @@ header.header{
     .header .burger-menu{
         display: none;
     }
+    .header .header__top #compra{
+        padding-top: 0;
+    }
 }
 
 @media(min-width:769px){
     .header .busqueda .boton{
         right: 20px;
-    }
+    }   
+
 }
