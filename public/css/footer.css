@@ -43,5 +43,9 @@
         justify-content: center;
         flex-direction: column;
     }
+    .footer #iconsfooter:hover{
+        color: #0022AA;
+    }        
+    
 
 }

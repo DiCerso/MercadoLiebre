@@ -240,6 +240,10 @@
         margin-left: 0;
         align-items: center;
     }
+
+    .register main form .botones button:hover{
+        background-color: #0022AA;
+    }
     
 }
 
